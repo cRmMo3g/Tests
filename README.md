@@ -1,4 +1,27 @@
-# Getting Started with Create React App
+# Getting Started with Test App
+
+Default app environment:\
+React js v.18.2.0 More info: https://reactjs.org/versions/ \
+Apache/2.4.54 (Win64) OpenSSL/1.1.1p PHP/8.1.10\
+Server: 10.4.25-MariaDB
+
+# Set up database
+
+ Copy DB folder into your local server:
+  
+ In APP.js need change links to your apache server\
+ `const url = "http://localhost/DB/question.php";` // Jautājumu izvade.'\
+ `const url2 = "http://localhost/DB/category.php";` // Kategoriju izvade'\
+ `const url3 = "http://localhost/DB/answer.php";` // Nospiesto jautājumu ievade serverī'\
+ `const url4 = "http://localhost/DB/complete.php";` // Rezultāta ievade datubāzē'
+ 
+ `DBconfig.php` - Mysql Host User Password Set database connection\
+ Import `DB_import.sql` to your MySql server\
+  
+ `answer.php` Add each test reasult per question.\
+ `question.php` file Questions per category from DB\
+ `complete.php` file Add @ mysql all complete result\
+ `category.php` file selects category from DB\
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
